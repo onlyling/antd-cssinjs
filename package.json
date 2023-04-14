@@ -8,7 +8,11 @@
   "scripts": {
     "commit": "npx git-cz",
     "dev": "rspack serve",
-    "build": "rspack build"
+    "build": "rspack build",
+    "build:commit": "git add dist && git commit -n -m 'commit doc file'",
+    "build:pulish-safe": "git subtree push --prefix dist origin gh-pages",
+    "build:pulish": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
+    "build:reset": "git reset --hard HEAD^"
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.8.1",
