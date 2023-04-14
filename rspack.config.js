@@ -8,6 +8,9 @@ module.exports = {
   entry: {
     main: './src/index.tsx',
   },
+  output: {
+    // publicPath: '/antd-cssinjs',
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
