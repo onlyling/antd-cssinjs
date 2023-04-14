@@ -1,0 +1,45 @@
+{
+  "name": "antd-cssinjs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/onlyling/antd-cssinjs.git",
+  "author": "LING_ZI_QING <onlylingstudio@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "commit": "npx git-cz",
+    "dev": "rspack serve",
+    "build": "rspack build"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.8.1",
+    "antd": "^5.4.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0"
+  },
+  "devDependencies": {
+    "@fruits-chain/eslint-config-preset": "^0.2.20",
+    "@fruits-chain/prettier-config-preset": "^0.0.3",
+    "@rspack/cli": "^0.1.7",
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.4"
+  },
+  "resolutions": {
+    "@types/react": "^18",
+    "prettier": "^2.5.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "prettier": "@fruits-chain/prettier-config-preset"
+}
