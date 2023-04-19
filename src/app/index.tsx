@@ -23,6 +23,10 @@ const App = () => {
           element={buildRouteSuspense(lazy(() => import('@/modules/cssinjs')))}
         />
         <Route
+          path="/antd"
+          element={buildRouteSuspense(lazy(() => import('@/modules/antd')))}
+        />
+        <Route
           path="/"
           element={buildRouteSuspense(lazy(() => import('./home')))}
         />

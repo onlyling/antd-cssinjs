@@ -7,6 +7,9 @@ const Home = () => {
       <li>
         <Link to="/cssinjs">CSS in JS</Link>
       </li>
+      <li>
+        <Link to="/antd">Antd</Link>
+      </li>
     </ul>
   )
 }
