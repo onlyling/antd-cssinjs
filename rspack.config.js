@@ -9,7 +9,7 @@ module.exports = {
     main: './src/index.tsx',
   },
   output: {
-    // publicPath: '/antd-cssinjs',
+    // publicPath: './',
   },
   resolve: {
     alias: {

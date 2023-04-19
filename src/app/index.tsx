@@ -1,7 +1,6 @@
-import { memo } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import type { LazyExoticComponent } from 'react'
-import { Suspense, lazy } from 'react'
+import { memo, Suspense, lazy } from 'react'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 const Loading = () => {
   return <div>加载中...</div>
@@ -17,7 +16,7 @@ export const buildRouteSuspense = (LazyRoute: LazyExoticComponent<any>) => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/cssinjs"
@@ -28,7 +27,7 @@ const App = () => {
           element={buildRouteSuspense(lazy(() => import('./home')))}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
