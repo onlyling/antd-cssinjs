@@ -1,6 +1,3 @@
-
- 
-
 module.exports = {
   extends: ['@fruits-chain/eslint-config-preset'],
   env: {
