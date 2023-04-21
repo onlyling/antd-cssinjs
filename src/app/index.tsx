@@ -27,6 +27,10 @@ const App = () => {
           element={buildRouteSuspense(lazy(() => import('@/modules/antd')))}
         />
         <Route
+          path="/bailu"
+          element={buildRouteSuspense(lazy(() => import('@/modules/bailu')))}
+        />
+        <Route
           path="/"
           element={buildRouteSuspense(lazy(() => import('./home')))}
         />

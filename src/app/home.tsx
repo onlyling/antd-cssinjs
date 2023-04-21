@@ -10,6 +10,9 @@ const Home = () => {
       <li>
         <Link to="/antd">Antd</Link>
       </li>
+      <li>
+        <Link to="/bailu">Bailu</Link>
+      </li>
     </ul>
   )
 }

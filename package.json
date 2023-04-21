@@ -12,11 +12,13 @@
     "build:commit": "git add dist && git commit -n -m 'commit doc file'",
     "build:pulish-safe": "git subtree push --prefix dist origin gh-pages",
     "build:pulish": "git push origin `git subtree split --prefix dist main`:gh-pages --force",
-    "build:reset": "git reset --hard HEAD^"
+    "build:reset": "git reset --hard HEAD^",
+    "ncu": "npx npm-check-updates -u"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.8.1",
-    "antd": "^5.4.2",
+    "@ant-design/cssinjs": "^1.9.1",
+    "@fruits-chain/design-tokens-bailu": "^0.0.7",
+    "antd": "^5.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0"
@@ -24,8 +26,8 @@
   "devDependencies": {
     "@fruits-chain/eslint-config-preset": "^0.2.20",
     "@fruits-chain/prettier-config-preset": "^0.0.3",
-    "@rspack/cli": "^0.1.7",
-    "@types/react": "^18.0.35",
+    "@rspack/cli": "^0.1.8",
+    "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "typescript": "^5.0.4"
   },
