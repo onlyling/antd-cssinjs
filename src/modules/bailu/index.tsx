@@ -1,4 +1,4 @@
-import { Space } from 'antd'
+import { Space, Tag } from 'antd'
 import { memo, useMemo, useState } from 'react'
 
 import AntdChildren from '../antd/app'
@@ -10,6 +10,7 @@ import Provider from './bailu/provider'
 const token1: Partial<BailuGlobalToken> = {
   colorPrimary: '#098',
   colorInfo: '#098',
+  brand_6: '#098',
 }
 
 const Bailu = () => {
@@ -25,6 +26,15 @@ const Bailu = () => {
       </Space>
 
       <br />
+
+      <Space>
+        <Tag color="success">success</Tag>
+        <Tag color="processing">processing</Tag>
+        <Tag color="error">error</Tag>
+        <Tag color="warning">warning</Tag>
+        <Tag color="default">default</Tag>
+      </Space>
+
       <br />
 
       <Space>

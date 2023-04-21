@@ -43,7 +43,7 @@ const genDefaultButtonStyle = (
     color: token.colorText,
 
     '&:hover': {
-      color: token.colorPrimary,
+      color: token.brand_6,
     },
   }))
 

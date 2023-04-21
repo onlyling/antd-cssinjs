@@ -34,6 +34,9 @@ const Provider = ({
       ...TOKENS,
       ...{
         colorPrimary: TOKENS.brand_6,
+        colorSuccess: TOKENS.green_6,
+        colorWarning: TOKENS.yellow_6,
+        colorError: TOKENS.red_6,
         colorInfo: TOKENS.brand_6,
       },
       ...theme?.token,
