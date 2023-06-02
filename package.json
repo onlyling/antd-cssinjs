@@ -7,29 +7,29 @@
   "license": "Apache-2.0",
   "scripts": {
     "commit": "npx git-cz",
-    "dev": "rspack serve",
+    "start": "rspack serve",
     "build": "rspack build",
     "build:commit": "git add dist && git commit -n -m 'commit doc file'",
     "build:pulish-safe": "git subtree push --prefix dist origin gh-pages",
     "build:pulish": "git push origin `git subtree split --prefix dist main`:gh-pages --force",
     "build:reset": "git reset --hard HEAD^",
-    "ncu": "npx npm-check-updates -u"
+    "ncu": "npx npm-check-updates -u -x typescript"
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.9.1",
     "@fruits-chain/design-tokens-bailu": "^0.0.7",
-    "antd": "^5.4.7",
+    "antd": "^5.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.1"
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@fruits-chain/eslint-config-preset": "^0.2.21",
     "@fruits-chain/prettier-config-preset": "^0.0.3",
-    "@rspack/cli": "^0.1.10",
-    "@types/react": "^18.2.6",
+    "@rspack/cli": "^0.2.0",
+    "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",
-    "typescript": "^5.0.4"
+    "typescript": "^4.9.5"
   },
   "resolutions": {
     "@types/react": "^18",
