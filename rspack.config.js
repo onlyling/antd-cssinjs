@@ -28,13 +28,17 @@ module.exports = {
     html: [
       {
         template: './index.html',
+        publicPath: './',
+        templateParameters: {
+          title: 'My App',
+          BASE_URL: './',
+        },
       },
     ],
     // copy: {
     //   patterns: [
     //     {
     //       from: 'public',
-
     //     }
     //   ]
     // }
