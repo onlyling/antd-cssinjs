@@ -23,5 +23,5 @@
     "strictNullChecks": false,
     "noUnusedLocals": true
   },
-  "include": ["src", "rspack.config.js"]
+  "include": ["src", "rsbuild.config.ts"]
 }
